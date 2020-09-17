@@ -1,0 +1,180 @@
+---
+layout: default
+title: Home
+---
+
+
+<!-- ========== ABOUT ========== -->
+<div class="docs-section" id="about">
+  <h4>About</h4>
+ 
+  <p>
+
+    Currently I'm a intern research fellow at the European Space Agency. My 
+research interests include satellite image processing, data fusion, image 
+segmentation and deep learning. The applications of my research is centered on 
+environment monitoring.
+   
+  </p>
+</div>
+
+
+
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+
+  <p>
+  
+    Previously I was a PhD Candidate at Université Bretagne Sud where I was 
+part 
+of the mathematics laboratory <a href=http://web.univ-ubs.fr/lmba/  
+target="_blank"/> LMBA </a> working with Pr. Jacques Froment and also part of 
+the <a href=https://www.irisa.fr/fr/equipes/obelix target="_blank"> Obelix </a> 
+team at <a href=https://www.irisa.fr/fr target="_blank"> IRISA </a> lab where I 
+worked with Pr. <a href=https://people.irisa.fr/Nicolas.Courty/> Nicolas Courty 
+</a>. My PhD was a partership with the University of Balearic Islands, Spain, 
+where I was supervised by Pr. <a href=http://www.ssdd.uib.es/?page_id=585 
+target="_blank"> Tomeu Coll </a> and collaborated with Dr. <a 
+href=https://joandurangrimalt.wordpress.com target="_blank"> Joan Duran </a>. 
+During my PhD I 
+worked on developping mathematicals models for satellite image processing, 
+namely hyperspectral and multispectral image fusion. For that, I used the 
+theory of optimal transport and non-local variational models. 
+ 
+  </p>
+
+</div>
+
+
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  
+  <div class="tab-content">
+
+    <!-- All PAPERS -->
+    
+    <div class="tab-pane active" id="papers-all">
+      {% for paper in site.data.publications.papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl 
+}}" target="_blank">Paper</a>
+            {% endif %}
+
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl 
+}}" target="_blank">Slides</a>
+            {% endif %}
+
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl 
+}}" target="_blank">Poster</a>
+            {% endif %}
+
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" 
+target="_blank">Video</a>
+            {% endif %}
+
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+   
+    
+  </div>
+</div>
+
+<!--
+<div class="docs-section" id="talks">
+  <h4>Talks and slides</h4>
+  {% assign current_talks = site.data.talks.talks | where: "category", "current" %}
+  {% for talk in current_talks %}
+  <div class="talk">
+    <p class="title"><b>{{ talk.name }}</b> ({{ talk.time }}): <a href={{talk.link}} target="_blank">{{ talk.title }}</a></p>
+  </div>
+  {% endfor %}
+</div>
+-->
+
+<!---
+<div class="docs-section" id="people">
+  <h4>Advisees</h4>
+
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#current">Current</div></li>
+    <li><div class="button" data-ref="#former">Former</div></li>
+  </ul>
+
+  <div class="tab-content">
+
+    <div class="tab-pane active" id="current">
+      {% assign current_people = site.data.students.students | where: "category", "current" %}
+      {% for person in current_people %}
+        <div class="paper">
+          <p class="title"><b>{{ person.name }}</b> ({{ person.time }})</p>
+          <p><i>{{ person.place }}</i></p>
+          {% if person.current %}
+          <p> {{ person.current }} </p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="former">
+      {% assign former_people = site.data.students.students | where: "category", "former" %}
+      {% for person in former_people %}
+        <div class="paper">
+          <p class="title"><b>{{ person.name }}</b> ({{ person.time }})</p>
+          <p><i>{{ person.place }}</i></p>
+          {% if person.current %}
+          <p> {{ person.current }} </p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    
+  </div>
+</div>
+--->
+
+
+
+
+<!-- ========== RESUME ========== -->
+
+
+<!-- ========== Teaching ========== -->
+<div class="docs-section" id="teachings">
+  <h4>Teachings</h4>
+    <p></p>
+    <ul class="a">
+        <li>[2017-2018] Linear algebra and series expansion. Department of 
+Mathematics, Computer Science and Statistics, Université Bretagne Sud, 
+Vannes.</li>
+        <li>[2016-2017] Tools and mathematical concepts. Department of 
+Mathematics, 
+Computer Science and Statistics, Université Bretagne Sud, Vannes.</li>
+    </ul>
+
+
+  <div class="docs-section" id="ack">
+  <h4>Acknowledgement</h4>
+  <p>
+    This website uses the website design and template by <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>
+  </p>
+
+</div>

@@ -1,0 +1,25 @@
+papers:
+
+  - title: "Variational Fusion of Hyperspectral Data by Conditional Filtering"
+    authors: "Jamila Mifdal, Bartomeu Coll, Jacques Froment and Joan Duran"
+    venue: "Submitted"
+    #paper_pdf: ""
+    bio: n
+
+  - title: "A Variational Formulation for Hyperspectral and Multispectral Image Fusion"
+    authors: "Jamila Mifdal, Bartomeu Coll, Joan Duran"
+    venue: "ICIP'18: IEEE International Conference on Image Processing"
+    #paper_pdf: ""
+    bio: n
+
+  - title: "Hyperspectral and Multispectral Wasserstein Barycenter for Image Fusion"
+    authors: "Jamila Mifdal, Bartomeu Coll, Nicolas Courty, Jacques Froment, Béatrice Vedel"
+    venue: "IGARSS'17: IEEE International Geoscience and Remote Sensing Symposium"
+    #paper_pdf: ""
+    selected: n
+    statsml: n
+    nlp: n
+    bio: n
+
+
+
