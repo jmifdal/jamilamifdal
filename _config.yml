@@ -6,5 +6,5 @@ collections:
   projects:
     output: true
     
-plugins:
+gems:
   - jekyll-redirect-from
