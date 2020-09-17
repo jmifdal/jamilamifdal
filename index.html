@@ -1,11 +1,7 @@
-
-
 ---
 layout: default
 title: Home
 ---
-
-
 <!-- ========== ABOUT ========== -->
 <div class="docs-section" id="about">
   <h4>About</h4>
@@ -67,7 +63,8 @@ theory of optimal transport and non-local variational models.
           <p><i>{{ paper.venue }}</i></p>
            <div class="paper-buttons">
             {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl 
+              <a class="button" href="{{ paper.paper_pdf | prepend: 
+site.baseurl 
 }}" target="_blank">Paper</a>
             {% endif %}
 
@@ -102,10 +99,13 @@ target="_blank">Video</a>
 <!--
 <div class="docs-section" id="talks">
   <h4>Talks and slides</h4>
-  {% assign current_talks = site.data.talks.talks | where: "category", "current" %}
+  {% assign current_talks = site.data.talks.talks | where: "category", 
+"current" 
+%}
   {% for talk in current_talks %}
   <div class="talk">
-    <p class="title"><b>{{ talk.name }}</b> ({{ talk.time }}): <a href={{talk.link}} target="_blank">{{ talk.title }}</a></p>
+    <p class="title"><b>{{ talk.name }}</b> ({{ talk.time }}): <a 
+href={{talk.link}} target="_blank">{{ talk.title }}</a></p>
   </div>
   {% endfor %}
 </div>
@@ -124,7 +124,8 @@ target="_blank">Video</a>
   <div class="tab-content">
 
     <div class="tab-pane active" id="current">
-      {% assign current_people = site.data.students.students | where: "category", "current" %}
+      {% assign current_people = site.data.students.students | where: 
+"category", "current" %}
       {% for person in current_people %}
         <div class="paper">
           <p class="title"><b>{{ person.name }}</b> ({{ person.time }})</p>
@@ -137,7 +138,9 @@ target="_blank">Video</a>
     </div>
 
     <div class="tab-pane" id="former">
-      {% assign former_people = site.data.students.students | where: "category", "former" %}
+      {% assign former_people = site.data.students.students | where: 
+"category", 
+"former" %}
       {% for person in former_people %}
         <div class="paper">
           <p class="title"><b>{{ person.name }}</b> ({{ person.time }})</p>
@@ -176,7 +179,8 @@ Computer Science and Statistics, Université Bretagne Sud, Vannes.</li>
   <div class="docs-section" id="ack">
   <h4>Acknowledgement</h4>
   <p>
-    This website uses the website design and template by <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>
+    This website uses the website design and template by <a 
+href="https://github.com/msaveski/www_personal">Martin Saveski</a>
   </p>
 
 </div>
