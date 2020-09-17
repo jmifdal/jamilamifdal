@@ -5,3 +5,6 @@ includes:    ./_includes
 collections:
   projects:
     output: true
+
+gems:
+  - jekyll-redirect-from
