@@ -1,8 +1,14 @@
 papers:
+  - title: "Towards Detecting Floating Objects On A Global Scale With            
+ Learned Spatial Features Using Sentinel 2"
+    authors: "Jamila Mifdal, Nicolas Longépé and Marc Russwurm"
+    venue: "ISPRS'2021: Annals of Photogrammetry, Remote Sensing and 
+            Spatial Information Sciences"
+    bio: n
 
   - title: "Variational Fusion of Hyperspectral Data by Conditional Filtering"
     authors: "Jamila Mifdal, Bartomeu Coll, Jacques Froment and Joan Duran"
-    venue: "Submitted"
+    venue: "Mathematics MDPI'2021"
     #paper_pdf: ""
     bio: n
 
